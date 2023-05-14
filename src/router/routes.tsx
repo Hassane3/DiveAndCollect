@@ -11,6 +11,8 @@ const Chat = lazy(() => import('../pages/Apps/Chat'));
 const Scrumboard = lazy(() => import('../pages/Apps/Scrumboard'));
 const Calendar = lazy(() => import('../pages/Apps/Calendar'));
 const List = lazy(() => import('../pages/Apps/Invoice/List'));
+const DiveBook = lazy(() => import('../pages/DiveBook'));
+const DiveShow = lazy(() => import('../pages/DiveShow'));
 const Preview = lazy(() => import('../pages/Apps/Invoice/Preview'));
 const Add = lazy(() => import('../pages/Apps/Invoice/Add'));
 const Edit = lazy(() => import('../pages/Apps/Invoice/Edit'));
@@ -114,18 +116,16 @@ const routes = [
         element: <Analytics />,
     },
     // finance page
+
+    //Pages
     {
-        path: '/finance',
-        element: <Finance />,
+        path: '/apps/diveBook',
+        element: <DiveBook />,
     },
     // crypto page
     {
-        path: '/crypto',
-        element: <Crypto />,
-    },
-    {
-        path: '/apps/todolist',
-        element: <Todolist />,
+        path: '/apps/diveBook',
+        element: <DiveShow />,
     },
     {
         path: '/apps/notes',
@@ -299,32 +299,6 @@ const routes = [
         path: '/elements/typography',
         element: <Typography />,
     },
-
-    // charts page
-    {
-        path: '/charts',
-        element: <Charts />,
-    },
-    // widgets page
-    {
-        path: '/widgets',
-        element: <Widgets />,
-    },
-    //  font-icons page
-    {
-        path: '/font-icons',
-        element: <FontIcons />,
-    },
-    //  Drag And Drop page
-    {
-        path: '/dragndrop',
-        element: <DragAndDrop />,
-    },
-    //  Tables page
-    {
-        path: '/tables',
-        element: <Tables />,
-    },
     // Data Tables
     {
         path: '/datatables/basic',
@@ -373,7 +347,7 @@ const routes = [
     // Users page
     {
         path: '/users/profile',
-        element: <Profile />,
+        element: <Profile name={''} level={0} image={''} />,
     },
     {
         path: '/users/user-account-settings',
