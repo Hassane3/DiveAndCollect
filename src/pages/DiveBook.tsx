@@ -15,57 +15,9 @@ const List = () => {
         dispatch(setPageTitle('Invoice List'));
     });
     const isDark = useSelector((state: IRootState) => state.themeConfig.theme) === 'dark' ? true : false;
-    // const [items, setItems] = useState([
-    //     {
-    //         id: 1,
-    //         date: '15 Dec 2020',
-    //         geoLocation: '??????',
-    //         city: 'Marseille',
-    //         depth: 20,
-    //         duration: 12,
-    //     },
-    //     {
-    //         id: 2,
-    //         date: '15 Dec 2020',
-    //         geoLocation: '??????',
-    //         city: 'Marseille',
-    //         depth: 20,
-    //         duration: 12,
-    //     },
-    //     {
-    //         id: 3,
-    //         date: '15 Dec 2020',
-    //         geoLocation: '??????',
-    //         city: 'Ciotat',
-    //         depth: 16,
-    //         duration: 12,
-    //     },
-    //     {
-    //         id: 4,
-    //         date: '15 Dec 2020',
-    //         geoLocation: '??????',
-    //         city: 'Nice',
-    //         depth: 20,
-    //         duration: 16,
-    //     },
-    //     {
-    //         id: 5,
-    //         date: '15 Dec 2020',
-    //         geoLocation: '??????',
-    //         city: 'La Rochelle',
-    //         depth: 10,
-    //         duration: 12,
-    //     },
-    //     {
-    //         id: 6,
-    //         date: '15 Dec 2020',
-    //         geoLocation: '??????',
-    //         city: 'Marseille',
-    //         depth: 12,
-    //         duration: 12,
-    //     },
-    // ]);
     const [items, setItems] = useState(plongeData);
+
+    const [plonges, setPlonges] = useState(Plonge(1));
 
     const deleteRow = (id: any = null) => {
         if (window.confirm('Are you sure want to delete selected row ?')) {
@@ -130,8 +82,6 @@ const List = () => {
         setRecords(sortStatus.direction === 'desc' ? data2.reverse() : data2);
         setPage(1);
     }, [sortStatus]);
-
-    console.log('PLONGE ======>', Plonge(3));
 
     return (
         <div className="panel px-0 border-white-light dark:border-[#1b2e4b]">

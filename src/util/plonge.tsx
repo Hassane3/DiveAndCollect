@@ -2,8 +2,6 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
-// const axios = require('axios');
-
 let config = {
     method: 'get',
     maxBodyLength: Infinity,
@@ -13,7 +11,7 @@ let config = {
 axios
     .request(config)
     .then((response) => {
-        console.log(JSON.stringify(response.data));
+        console.log('RESPONSE ==>', JSON.stringify(response.data));
     })
     .catch((error) => {
         console.log(error);
@@ -50,14 +48,5 @@ export const Plonge = (id: number) => {
                 console.log(error);
             });
     }, []);
-    return (
-        <>
-            {/* <div className="card">
-                <h2 className="title">{title}</h2>
-                <img className="moviePicture" src={`https://image.tmdb.org/t/p/w500/${image}`} alt="" />
-                <p className="resume">Résumé : {overview}</p>
-                <p className="time">{runtime} minutes</p>
-            </div> */}
-        </>
-    );
+    return <></>;
 };

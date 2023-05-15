@@ -1,8 +1,8 @@
 import { lazy } from 'react';
-const Index = lazy(() => import('../pages/Index'));
-const Analytics = lazy(() => import('../pages/Analytics'));
-const Finance = lazy(() => import('../pages/Finance'));
-const Crypto = lazy(() => import('../pages/Crypto'));
+// const Index = lazy(() => import('../pages/Index'));
+// const Analytics = lazy(() => import('../pages/Analytics'));
+// const Finance = lazy(() => import('../pages/Finance'));
+// const Crypto = lazy(() => import('../pages/Crypto'));
 const Todolist = lazy(() => import('../pages/Apps/Todolist'));
 const Mailbox = lazy(() => import('../pages/Apps/Mailbox'));
 const Notes = lazy(() => import('../pages/Apps/Notes'));
@@ -17,20 +17,20 @@ const DiveSpecies = lazy(() => import('../pages/DiveSpecies'));
 const Preview = lazy(() => import('../pages/Apps/Invoice/Preview'));
 const Add = lazy(() => import('../pages/Apps/Invoice/Add'));
 const Edit = lazy(() => import('../pages/Apps/Invoice/Edit'));
-const Tabs = lazy(() => import('../pages/Components/Tabs'));
-const Accordians = lazy(() => import('../pages/Components/Accordians'));
-const Modals = lazy(() => import('../pages/Components/Modals'));
-const Cards = lazy(() => import('../pages/Components/Cards'));
-const Carousel = lazy(() => import('../pages/Components/Carousel'));
-const Countdown = lazy(() => import('../pages/Components/Countdown'));
-const Counter = lazy(() => import('../pages/Components/Counter'));
-const SweetAlert = lazy(() => import('../pages/Components/SweetAlert'));
-const Timeline = lazy(() => import('../pages/Components/Timeline'));
-const Notification = lazy(() => import('../pages/Components/Notification'));
-const MediaObject = lazy(() => import('../pages/Components/MediaObject'));
-const ListGroup = lazy(() => import('../pages/Components/ListGroup'));
-const PricingTable = lazy(() => import('../pages/Components/PricingTable'));
-const LightBox = lazy(() => import('../pages/Components/LightBox'));
+// const Tabs = lazy(() => import('../pages/Components/Tabs'));
+// const Accordians = lazy(() => import('../pages/Components/Accordians'));
+// const Modals = lazy(() => import('../pages/Components/Modals'));
+// const Cards = lazy(() => import('../pages/Components/Cards'));
+// const Carousel = lazy(() => import('../pages/Components/Carousel'));
+// const Countdown = lazy(() => import('../pages/Components/Countdown'));
+// const Counter = lazy(() => import('../pages/Components/Counter'));
+// const SweetAlert = lazy(() => import('../pages/Components/SweetAlert'));
+// const Timeline = lazy(() => import('../pages/Components/Timeline'));
+// const Notification = lazy(() => import('../pages/Components/Notification'));
+// const MediaObject = lazy(() => import('../pages/Components/MediaObject'));
+// const ListGroup = lazy(() => import('../pages/Components/ListGroup'));
+// const PricingTable = lazy(() => import('../pages/Components/PricingTable'));
+// const LightBox = lazy(() => import('../pages/Components/LightBox'));
 const Alerts = lazy(() => import('../pages/Elements/Alerts'));
 const Avatar = lazy(() => import('../pages/Elements/Avatar'));
 const Badges = lazy(() => import('../pages/Elements/Badges'));
@@ -49,10 +49,10 @@ const Search = lazy(() => import('../pages/Elements/Search'));
 const Tooltip = lazy(() => import('../pages/Elements/Tooltip'));
 const Treeview = lazy(() => import('../pages/Elements/Treeview'));
 const Typography = lazy(() => import('../pages/Elements/Typography'));
-const Widgets = lazy(() => import('../pages/Widgets'));
-const FontIcons = lazy(() => import('../pages/FontIcons'));
-const DragAndDrop = lazy(() => import('../pages/DragAndDrop'));
-const Tables = lazy(() => import('../pages/Tables'));
+// const Widgets = lazy(() => import('../pages/Widgets'));
+// const FontIcons = lazy(() => import('../pages/FontIcons'));
+// const DragAndDrop = lazy(() => import('../pages/DragAndDrop'));
+// const Tables = lazy(() => import('../pages/Tables'));
 const Basic = lazy(() => import('../pages/DataTables/Basic'));
 const Advanced = lazy(() => import('../pages/DataTables/Advanced'));
 const Skin = lazy(() => import('../pages/DataTables/Skin'));
@@ -84,7 +84,7 @@ const RecoverIdCover = lazy(() => import('../pages/Authentication/RecoverIdCover
 const UnlockCover = lazy(() => import('../pages/Authentication/UnlockCover'));
 const About = lazy(() => import('../pages/About'));
 const Error = lazy(() => import('../components/Error'));
-const Charts = lazy(() => import('../pages/Charts'));
+// const Charts = lazy(() => import('../pages/Charts'));
 const FormBasic = lazy(() => import('../pages/Forms/Basic'));
 const FormInputGroup = lazy(() => import('../pages/Forms/InputGroup'));
 const FormLayouts = lazy(() => import('../pages/Forms/Layouts'));
@@ -112,11 +112,13 @@ const routes = [
     //     element: <Index />,
     // },
     // analytics page
-    {
-        path: '/analytics',
-        element: <Analytics />,
-    },
+    // {
+    //     path: '/analytics',
+    //     element: <Analytics />,
+    // },
     // finance page
+
+    //Pages
 
     //Pages
     {
@@ -179,62 +181,62 @@ const routes = [
         element: <Edit />,
     },
     // components page
-    {
-        path: '/components/tabs',
-        element: <Tabs />,
-    },
-    {
-        path: '/components/accordions',
-        element: <Accordians />,
-    },
-    {
-        path: '/components/modals',
-        element: <Modals />,
-    },
-    {
-        path: '/components/cards',
-        element: <Cards />,
-    },
-    {
-        path: '/components/carousel',
-        element: <Carousel />,
-    },
-    {
-        path: '/components/countdown',
-        element: <Countdown />,
-    },
-    {
-        path: '/components/counter',
-        element: <Counter />,
-    },
-    {
-        path: '/components/sweetalert',
-        element: <SweetAlert />,
-    },
-    {
-        path: '/components/timeline',
-        element: <Timeline />,
-    },
-    {
-        path: '/components/notifications',
-        element: <Notification />,
-    },
-    {
-        path: '/components/media-object',
-        element: <MediaObject />,
-    },
-    {
-        path: '/components/list-group',
-        element: <ListGroup />,
-    },
-    {
-        path: '/components/pricing-table',
-        element: <PricingTable />,
-    },
-    {
-        path: '/components/lightbox',
-        element: <LightBox />,
-    },
+    // {
+    //     path: '/components/tabs',
+    //     element: <Tabs />,
+    // },
+    // {
+    //     path: '/components/accordions',
+    //     element: <Accordians />,
+    // },
+    // {
+    //     path: '/components/modals',
+    //     element: <Modals />,
+    // },
+    // {
+    //     path: '/components/cards',
+    //     element: <Cards />,
+    // },
+    // {
+    //     path: '/components/carousel',
+    //     element: <Carousel />,
+    // },
+    // {
+    //     path: '/components/countdown',
+    //     element: <Countdown />,
+    // },
+    // {
+    //     path: '/components/counter',
+    //     element: <Counter />,
+    // },
+    // {
+    //     path: '/components/sweetalert',
+    //     element: <SweetAlert />,
+    // },
+    // {
+    //     path: '/components/timeline',
+    //     element: <Timeline />,
+    // },
+    // {
+    //     path: '/components/notifications',
+    //     element: <Notification />,
+    // },
+    // {
+    //     path: '/components/media-object',
+    //     element: <MediaObject />,
+    // },
+    // {
+    //     path: '/components/list-group',
+    //     element: <ListGroup />,
+    // },
+    // {
+    //     path: '/components/pricing-table',
+    //     element: <PricingTable />,
+    // },
+    // {
+    //     path: '/components/lightbox',
+    //     element: <LightBox />,
+    // },
     // elements page
     {
         path: '/elements/alerts',
